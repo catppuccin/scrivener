@@ -36,14 +36,14 @@
 
 ## Usage
 
-> [!NOTE]
+> [!IMPORTANT]
 > Currently this port only supports Scrivener on macOS.
 
 1. Download your desired flavour from [themes](./themes/)
 2. Go to `Scrivener -> Theme -> Import Themes` and select your chosen theme
 3. Go to `Scrivener -> Appearance` to set your theme to light (for latte) and dark (for frappe, macchiato, and mocha)
 
-## Keep Main Editor Light Option
+### Keep Main Editor Light Option
 - Dark themes have an additional option allowing the main editor to remain light. You can toggle this option from: `Scrivener -> Apperance -> Keep Main Editors Light`
 
 Example:
