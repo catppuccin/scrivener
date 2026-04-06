@@ -37,11 +37,22 @@
 ## Usage
 
 > [!IMPORTANT]
-> Currently this port only supports Scrivener on macOS.
+> Currently this port supports Scrivener on macOS and Windows.
+
+
+### macOS
 
 1. Download your desired flavour from [themes](./themes/)
 2. Go to `Scrivener -> Theme -> Import Themes` and select your chosen theme
 3. Go to `Scrivener -> Appearance` to set your theme to light (for latte) and dark (for frappe, macchiato, and mocha)
+
+### Windows
+
+1. Download the `.scrtheme` file for your preferred flavor from the [themes](./themes/) folder
+2. In Scrivener, go to **Options → Manage → Load Theme from File**
+3. Select the downloaded `.scrtheme` file
+4. A popup will appear — press OK and restart Scrivener
+5. To switch between themes, go to **Options → Manage** — your imported themes will appear under **Custom Themes**
 
 ### Keep Main Editor Light Option
 - Dark themes have an additional option allowing the main editor to remain light. You can toggle this option from: `Scrivener -> Apperance -> Keep Main Editors Light`
