@@ -60,7 +60,7 @@
 ## Usage
 
 ### macOS
-1. Download your desired flavour from [themes](./themes/)
+1. Download your desired flavour from [themes](./themes/macos/)
 2. Go to `Scrivener -> Theme -> Import Themes` and select your chosen theme
 3. Go to `Scrivener -> Appearance` to set your theme to light (for latte) and dark (for frappe, macchiato, and mocha)
 
