@@ -1,0 +1,33 @@
+
+
+Base(35,38,52)  //Used mostly as the background color for text entry widgets, but can also be used as the background of combobox drop down lists and toolbar handles. It is usually white or another light color
+AlternateBase(65,69,89) //Used as the alternate background color in views with alternating row colors
+Window(35,38,52) //A general background color
+ToolTipBase(48,52,70) //Used as the background color for ToolTip
+Button(48,52,70) //The general button background color
+Highlight(98,104,128) //A background color to indicate a selected item or the current item
+
+//TEXTS
+WindowText(198,208,245) //A general foreground color
+Text(198,208,245) //The foreground color used with Base. This is usually the same as the WindowText, in which case it must provide good contrast with Window and Base
+BrightText(198,208,245) //A text color that is very different from WindowText, and contrasts well e.g. Dark. Typically used for text that needs to be drawn where Text or WindowText would give poor contrast, such as on pressed push buttons
+ButtonText(198,208,245) //A foreground color used with the Button color
+HighlightedText(198,208,245) //A text color that contrasts with Highlight
+ToolTipText(198,208,245) //Used as the foreground color for ToolTip
+PlaceholderText(198,208,245) //Used as the placeholder color for various text input widgets
+Link(140,170,238) //A text color used for unvisited hyperlinks
+LinkVisited(202,158,230) //A text color used for already visited hyperlinks
+
+//BASE PALETTE SHADES
+Light(98,104,128) //Lighter than Button color
+Midlight(81,87,109) //Between Button and Light
+Mid(48,52,70) //Between Button and Dark
+Dark(41,44,60) //Darker than Button
+Shadow(35,38,52) //very dark color i.e. black
+
+//DISABLED
+WindowText:Disabled(181,191,226)
+Text:Disabled(115,121,148)
+Text:Disabled(115,121,148)
+ButtonText:Disabled(115,121,148)
+Highlight:Disabled(81,87,109)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerThemes>
+    <ScrivenerTheme name="Catppuccin-Frappe" style="Dark">
+        <qtstylesheet>Catppuccin-Frappe.qss</qtstylesheet>
+        <palette>Catppuccin-Frappe.pal</palette>
+        <preferences load="Colors">Catppuccin-Frappe.prefs</preferences>
+    </ScrivenerTheme>
+</ScrivenerThemes>

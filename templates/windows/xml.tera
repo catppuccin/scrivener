@@ -1,0 +1,15 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+  filename: "themes/windows/Catppuccin-{{flavor.identifier | capitalize}}/Catppuccin-{{flavor.identifier | capitalize}}.xml"
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerThemes>
+    <ScrivenerTheme name="Catppuccin-{{flavor.identifier | capitalize}}" style="{{if(cond=flavor.light, t="Light", f="Dark")}}">
+        <qtstylesheet>Catppuccin-{{flavor.identifier | capitalize}}.qss</qtstylesheet>
+        <palette>Catppuccin-{{flavor.identifier | capitalize}}.pal</palette>
+        <preferences load="Colors">Catppuccin-{{flavor.identifier | capitalize}}.prefs</preferences>
+    </ScrivenerTheme>
+</ScrivenerThemes>
