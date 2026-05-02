@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerThemes>
+    <ScrivenerTheme name="Catppuccin-Mocha" style="Dark">
+        <qtstylesheet>Catppuccin-Mocha.qss</qtstylesheet>
+        <palette>Catppuccin-Mocha.pal</palette>
+        <preferences load="Colors">Catppuccin-Mocha.prefs</preferences>
+    </ScrivenerTheme>
+</ScrivenerThemes>

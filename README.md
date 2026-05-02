@@ -12,42 +12,68 @@
 </p>
 
 <p align="center">
-	<img src="assets/previews/preview.webp"/>
+	<img src="assets/previews/macos/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
+<summary>🍏 macOS</summary>
+<details>
 <summary>🌻 Latte</summary>
-<img src="assets/previews/latte.webp"/>
+<img src="assets/previews/macos/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/previews/frappe.webp"/>
+<img src="assets/previews/macos/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/previews/macchiato.webp"/>
+<img src="assets/previews/macos/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/previews/mocha.webp"/>
+<img src="assets/previews/macos/mocha.webp"/>
+</details>
+</details>
+
+<details>
+<summary>🪟 Windows</summary>
+<details>
+<summary>🌻 Latte</summary>
+<img src="assets/previews/windows/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="assets/previews/windows/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="assets/previews/windows/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="assets/previews/windows/mocha.webp"/>
+</details>
 </details>
 
 ## Usage
 
-> [!IMPORTANT]
-> Currently this port only supports Scrivener on macOS.
-
+### macOS
 1. Download your desired flavour from [themes](./themes/)
 2. Go to `Scrivener -> Theme -> Import Themes` and select your chosen theme
 3. Go to `Scrivener -> Appearance` to set your theme to light (for latte) and dark (for frappe, macchiato, and mocha)
 
-### Keep Main Editor Light Option
-- Dark themes have an additional option allowing the main editor to remain light. You can toggle this option from: `Scrivener -> Apperance -> Keep Main Editors Light`
+#### Keep Main Editor Light Option
+- On macOS, dark themes have an additional option allowing the main editor to remain light. You can toggle this option from: `Scrivener -> Apperance -> Keep Main Editors Light`
 
 Example:
-<img src="assets/previews/mocha-latte.webp"/>
+<img src="assets/previews/macos/mocha-latte.webp"/>
+
+### Windows
+1. Download your desired flavour from [releases](https://github.com/catppuccin/scrivener/releases/latest)
+2. Go to `File -> Options -> Manage -> Load Theme from File` and select your chosen theme
+3. Click OK and restart Scrivener to apply your new theme
 
 
 ## 💝 Thanks to

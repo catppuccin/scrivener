@@ -1,0 +1,357 @@
+QToolTip {
+    color: palette(text);
+    background-color: palette(base);
+    border: 1px solid palette(dark);
+    border-radius: 4px;
+}
+
+QStatusBar {
+    background-color: palette(alternate-base);
+    color: palette(mid);
+}
+
+QMenuBar {
+    background-color: palette(alternate-base);
+    border-bottom: 2px solid transparent;
+}
+
+QMenuBar::item {
+    spacing: 2px;
+    padding: 3px 4px;
+    background: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: palette(midlight);
+    border-left: 1px solid palette(midlight);
+    border-right: 1px solid palette(midlight);
+}
+
+QMenuBar::item:pressed {
+    background-color: palette(highlight);
+    border-left: 1px solid palette(dark);
+    border-right: 1px solid palette(dark);
+}
+
+QMenu {
+    background-color: palette(window);
+    border: 1px solid palette(shadow);
+}
+
+QMenu::item {
+    min-width: 120px !important;
+    /*horrid workaround qt bug where shortcuts overlap menu text*/
+    border: 1px solid transparent;
+    padding: 1px 20px 1px 26px !important;
+    margin: 1px !important;
+}
+
+QMenu::item:disabled {
+    color: palette(disabled);
+}
+
+QMenu::item:selected {
+    border-color: palette(highlight);
+    background: palette(highlight);
+}
+
+QMenu::icon:checked {
+    background-color: palette(background);
+    border: 1px solid palette(highlight);
+    border-radius: 2px;
+}
+
+QMenu::right-arrow {
+    width: 10px;
+    height: 10px;
+    margin-right: 1px;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: palette(alternate-base);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+QMenu::indicator {
+    position: absolute!important;
+    top: 2px!important;
+    left: 2px!important;
+    width: 13px!important;
+    height: 13px!important;
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(:Resources/DarkMode/icon_checkbox_checked.svg);
+    padding-left: 2px;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(:Resources/DarkMode/icon_checkbox_unchecked.svg);
+    padding-left: 2px;
+}
+
+QMenu::indicator:exclusive:checked {
+    image: url(:Resources/DarkMode/icon_radiobutton_checked.svg);
+    padding-left: 2px;
+}
+
+QMenu::indicator:exclusive:unchecked {
+    image: url(:Resources/DarkMode/icon_radiobutton_unchecked.svg);
+    padding-left: 2px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:checked,
+QTreeView::indicator:checked,
+QTableView::indicator:checked,
+QGroupBox::indicator:checked {
+    image: url(:Resources/DarkMode/icon_checkbox_checked.svg);
+}
+
+QCheckBox::indicator:checked:pressed,
+QTreeView::indicator:checked:pressed,
+QTableView::indicator:checked:pressed,
+QGroupBox::indicator:checked:pressed {
+    image: url(:Resources/DarkMode/icon_checkbox_checked_pressed.svg);
+}
+
+QCheckBox::indicator:checked:disabled,
+QTreeView::indicator:checked:disabled,
+QTableView::indicator:checked:disabled,
+QGroupBox::indicator:checked:disabled {
+    image: url(:Resources/DarkMode/icon_checkbox_checked_disabled.svg);
+}
+
+QCheckBox::indicator:unchecked,
+QTreeView::indicator:unchecked,
+QTableView::indicator:unchecked,
+QGroupBox::indicator:unchecked {
+    image: url(:Resources/DarkMode/icon_checkbox_unchecked.svg);
+}
+
+QCheckBox::indicator:unchecked:pressed,
+QTreeView::indicator:unchecked:pressed,
+QTableView::indicator:unchecked:pressed,
+QGroupBox::indicator:unchecked:pressed {
+    image: url(:Resources/DarkMode/icon_checkbox_unchecked_pressed.svg);
+}
+
+QCheckBox::indicator:unchecked:disabled,
+QTreeView::indicator:unchecked:disabled,
+QTableView::indicator:unchecked:disabled,
+QGroupBox::indicator:unchecked:disabled {
+    image: url(:Resources/DarkMode/icon_checkbox_unchecked_disabled.svg);
+}
+
+QCheckBox::indicator:indeterminate,
+QTreeView::indicator:indeterminate,
+QTableView::indicator:indeterminate,
+QGroupBox::indicator:indeterminate {
+    image: url(:Resources/DarkMode/icon_checkbox_indeterminate.svg);
+}
+
+QCheckBox::indicator:indeterminate:pressed,
+QTreeView::indicator:indeterminate:pressed,
+QTableView::indicator:indeterminate:pressed,
+QGroupBox::indicator:indeterminate:pressed {
+    image: url(:Resources/DarkMode/icon_checkbox_indeterminate_pressed.svg);
+}
+
+QCheckBox::indicator:indeterminate:disabled,
+QTreeView::indicator:indeterminate:disabled,
+QTableView::indicator:indeterminate:disabled,
+QGroupBox::indicator:indeterminate:disabled {
+    image: url(:Resources/DarkMode/icon_checkbox_indeterminate_disabled.svg);
+}
+
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator:checked {
+    image: url(:Resources/DarkMode/icon_radiobutton_checked.svg);
+}
+
+QRadioButton::indicator:checked:pressed {
+    image: url(:Resources/DarkMode/icon_radiobutton_checked_pressed.svg);
+}
+
+QRadioButton::indicator:checked:disabled {
+    image: url(:Resources/DarkMode/icon_radiobutton_checked_disabled.svg);
+}
+
+QRadioButton::indicator:unchecked {
+    image: url(:Resources/DarkMode/icon_radiobutton_unchecked.svg);
+}
+
+QRadioButton::indicator:unchecked:pressed {
+    image: url(:Resources/DarkMode/icon_radiobutton_unchecked_pressed.svg);
+}
+
+QRadioButton::indicator:unchecked:disabled {
+    image: url(:Resources/DarkMode/icon_radiobutton_unchecked_disabled.svg);
+}
+
+QMainWindow::separator {
+    width: 6px;
+    height: 5px;
+    padding: 2px;
+}
+
+QMainWindow::separator:hover,
+QSplitter::handle:hover {
+    background: palette(alternate-base);
+}
+
+QDockWidget::title {
+    padding: 4px;
+    background-color: palette(background);
+    border: 1px solid palette(dark);
+    border-bottom: 2px solid palette(dark);
+}
+
+QDockWidget::close-button,
+QDockWidget::float-button {
+    subcontrol-position: top right;
+    subcontrol-origin: margin;
+    position: absolute;
+    top: 3px;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+QDockWidget::close-button {
+    right: 3px;
+}
+
+QDockWidget::float-button {
+    right: 25px;
+}
+
+QGroupBox {
+    background-color: palette(mid);
+    margin-top: 27px;
+    border: 1px solid palette(dark);
+    border-radius: 4px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: left top;
+    padding: 4px 6px;
+    margin-left: 3px;
+    background-color: palette(background);
+    border: 1px solid palette(dark);
+    border-bottom: 2px solid palette(midlight);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabWidget::pane {
+    background-color: palette(mid);
+    border-top: 1px solid palette(dark);
+}
+
+QTabWidget::tab-bar {
+    left: 3px;
+    top: 1px;
+}
+
+QTabBar {
+    background-color: transparent;
+    qproperty-drawBase: 0;
+    border-bottom: 1px solid palette(dark);
+}
+
+QTabBar::tab {
+    padding: 4px 6px;
+    background-color: palette(background);
+    border: 1px solid palette(dark);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected,
+QTabBar::tab:hover {
+    background-color: palette(mid);
+    border-bottom-color: palette(mid);
+}
+
+QTabBar::tab:selected {
+    border-bottom: 2px solid palette(highlight);
+}
+
+QTabBar::tab::selected:disabled {
+    border-bottom: 2px solid palette(midlight);
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+QTreeView,
+QTableView {
+    show-decoration-selected: 0;
+    alternate-background-color: palette(window);
+}
+
+QTreeView QHeaderView::section,
+QTableView QHeaderView::section {
+    background-color: palette(background);
+    border-style: none;
+    border-bottom: 1px solid palette(dark);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+QTreeView::branch:has-siblings:adjoins-item,
+QTreeView::branch:!has-children:!has-siblings:adjoins-item,
+QTreeView::branch:closed:has-children:has-siblings,
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:open:has-children:has-siblings,
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:has-siblings:!adjoins-item,
+QTreeView::branch:active:has-siblings:!adjoins-item,
+QTreeView::branch:!active:has-siblings:!adjoins-item,
+QTreeView::branch:selected:active,
+QTreeView::branch:selected:!active {
+    background: palette(base);
+}
+
+QTreeView::item:selected:active,
+QTreeView::item:selected:!active {
+    background: rgba(88,91,112, 130);
+    /*palette(highlight)*/
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(:Resources/DarkMode/icon_transparent.svg) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(:Resources/DarkMode/icon_transparent.svg) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(:Resources/DarkMode/icon_transparent.svg) 0;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(:Resources/DarkMode/icon_branch_closed.svg);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+    border-image: none;
+    image: url(:Resources/DarkMode/icon_branch_open.svg);
+}

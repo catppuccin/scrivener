@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerThemes>
+    <ScrivenerTheme name="Catppuccin-Latte" style="Light">
+        <qtstylesheet>Catppuccin-Latte.qss</qtstylesheet>
+        <palette>Catppuccin-Latte.pal</palette>
+        <preferences load="Colors">Catppuccin-Latte.prefs</preferences>
+    </ScrivenerTheme>
+</ScrivenerThemes>

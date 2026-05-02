@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerThemes>
+    <ScrivenerTheme name="Catppuccin-Macchiato" style="Dark">
+        <qtstylesheet>Catppuccin-Macchiato.qss</qtstylesheet>
+        <palette>Catppuccin-Macchiato.pal</palette>
+        <preferences load="Colors">Catppuccin-Macchiato.prefs</preferences>
+    </ScrivenerTheme>
+</ScrivenerThemes>

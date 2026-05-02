@@ -1,0 +1,44 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+  filename: "themes/windows/Catppuccin-{{flavor.identifier | capitalize}}/Catppuccin-{{flavor.identifier | capitalize}}.pal"
+---
+{%- macro rgb(color) -%}
+{{ color.rgb.r }},{{ color.rgb.g }},{{ color.rgb.b }}
+{%- endmacro -%}
+
+{#  {{ self::rgb(color=crust) }}  #}
+
+Base({{ self::rgb(color=crust) }})  //Used mostly as the background color for text entry widgets, but can also be used as the background of combobox drop down lists and toolbar handles. It is usually white or another light color
+AlternateBase({{ self::rgb(color=surface0) }}) //Used as the alternate background color in views with alternating row colors
+Window({{ self::rgb(color=crust) }}) //A general background color
+ToolTipBase({{ self::rgb(color=base) }}) //Used as the background color for ToolTip
+Button({{ self::rgb(color=if(cond=flavor.light, t=crust, f=base)) }}) //The general button background color
+Highlight({{ self::rgb(color=surface2) }}) //A background color to indicate a selected item or the current item
+
+//TEXTS
+WindowText({{ self::rgb(color=text) }}) //A general foreground color
+Text({{ self::rgb(color=text) }}) //The foreground color used with Base. This is usually the same as the WindowText, in which case it must provide good contrast with Window and Base
+BrightText({{ self::rgb(color=text) }}) //A text color that is very different from WindowText, and contrasts well e.g. Dark. Typically used for text that needs to be drawn where Text or WindowText would give poor contrast, such as on pressed push buttons
+ButtonText({{ self::rgb(color=text) }}) //A foreground color used with the Button color
+HighlightedText({{ self::rgb(color=text) }}) //A text color that contrasts with Highlight
+ToolTipText({{ self::rgb(color=text) }}) //Used as the foreground color for ToolTip
+PlaceholderText({{ self::rgb(color=text) }}) //Used as the placeholder color for various text input widgets
+Link({{ self::rgb(color=blue) }}) //A text color used for unvisited hyperlinks
+LinkVisited({{ self::rgb(color=mauve) }}) //A text color used for already visited hyperlinks
+
+//BASE PALETTE SHADES
+Light({{ self::rgb(color=if(cond=flavor.light, t=base, f=surface2)) }}) //Lighter than Button color
+Midlight({{ self::rgb(color=if(cond=flavor.light, t=mantle, f=surface1)) }}) //Between Button and Light
+Mid({{ self::rgb(color=if(cond=flavor.light, t=base, f=base)) }}) //Between Button and Dark
+Dark({{ self::rgb(color=if(cond=flavor.light, t=overlay2, f=mantle)) }}) //Darker than Button
+Shadow({{ self::rgb(color=if(cond=flavor.light, t=text, f=crust)) }}) //very dark color i.e. black
+
+//DISABLED
+WindowText:Disabled({{ self::rgb(color=subtext1) }})
+Text:Disabled({{ self::rgb(color=overlay0) }})
+Text:Disabled({{ self::rgb(color=overlay0) }})
+ButtonText:Disabled({{ self::rgb(color=overlay0) }})
+Highlight:Disabled({{ self::rgb(color=surface1) }})
